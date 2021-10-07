@@ -19,6 +19,21 @@ p {
   font-size: 0.9375rem;
 }
 
+h1 {
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+button {
+  max-width: 10.625rem;
+  max-height: 2.5625rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -28,9 +43,52 @@ p {
   color: #3e52a3;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
+.flex-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vh;
+  border: 2px solid magenta;
+}
+
+.main__container_heading {
+  margin-bottom: 4.375rem;
+  text-align: center;
+}
+
+.content__container {
+  border: 2px solid black;
+  max-height: 25rem;
+  max-width: 33.75rem;
+}
+
+.content__container_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__header_price {
+  display: flex;
+}
+
+.slider__container {
+  display: flex;
+  justify-content: center;
+}
+
+.slider__billing_container {
+  display: flex;
+}
+
+.content__container_footer {
+  display: flex;
+  justify-content: space-between;
 }
