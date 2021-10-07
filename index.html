@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
+  <script defer src="app.js"></script>
   <link rel="stylesheet" href="/css/index.css">
   
   <title>Frontend Mentor | Interactive pricing component</title>
@@ -13,20 +14,56 @@
 </head>
 <body>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
 
-  Pageviews
-  $ /month
+<main class="main__container">
+  <div class="main__container_heading"><h1>Simple, traffic-based pricing</h1><h2>Sign-up for our 30-day trial. No credit card required</h2></div>
 
-  Monthly Billing
-  Yearly Billing 25% discount
+  <div class="content__container">
+      <div class="content__container_header">
 
-  Unlimited websites
-  100% data ownership
-  Email reports
+        <div class="content__header_pageview"></div>
+        <div class="content__header_price"></div>
 
-  Start my trial
+      </div>
+
+      <div class="slider__container">
+        
+        <input class="slider" type="range">
+      </div>
+
+
+      <div class="slider__billing_container">
+
+        
+        <label class="switch"for="">
+          <span>Monthly Billing</span>
+          <input type="checkbox">
+          <span class="slider-round"></span>
+          <span>Yearly Billing</span>
+        </label>
+
+        <div class="discount_container">
+          <span>25% discount</span>
+        </div>
+
+
+      </div>
+
+      <div class="content__container_footer">
+        <div class="content__footer_facts">
+         <div>Unlimited websites</div>
+         <div>100% data ownership</div>
+         <div>Email reports</div>
+        </div>
+        <div class="content__footer_btn_container">
+          <button type="submit" class="trial-btn">Start my trial</button>
+        </div>
+      </div>
+  </div>
+
+</main>
+
+
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
