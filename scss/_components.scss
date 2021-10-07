@@ -1,0 +1,143 @@
+@use 'functions';
+@use 'colors';
+
+
+
+
+
+h1 {
+    color: $text-color-dark;
+}
+
+h2 {
+    color: $text-color;
+    
+}
+
+.trial-btn {
+
+  padding: rem(13) rem(46);
+  border-radius: rem(30);
+  border: none;
+  background-color: $text-color-dark;
+  color: $cta-text;
+  font-weight: 800;
+  font-size: rem(12);
+  cursor: pointer;
+
+  &:hover {
+
+    color: $white;
+  }
+}
+
+.main__container_heading {
+
+    background-image: url(/images/pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+
+.content__container {
+
+    background-color: $white;
+    box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+    border-radius: rem(8);
+   
+}
+
+.content__container_header {
+
+    padding: rem(24) rem(0);
+}
+
+.content__header_pageview {
+
+    span {
+
+        color: $text-color;
+        text-transform: uppercase;
+        font-size: rem(14);
+        letter-spacing: 2px;
+        font-weight: 800;
+    }
+}
+
+.content__header_price {
+
+
+    div {
+
+        font-size: rem(40);
+        font-weight: 800;
+        letter-spacing: -1px;
+        color: $text-color-dark;
+    }
+
+    span {
+
+        font-size: rem(16);
+        font-weight: 600;
+        color: $text-color;
+        margin-left: rem(8);
+    }
+}
+
+.slider__billing_container {
+
+    padding: rem(45) rem(0);
+}
+
+.switch {
+
+    span {
+
+        color: $text-color;
+        font-size: rem(12);
+    }
+}
+
+.discount_container {
+
+    padding: rem(2) rem(8);
+    background-color: $discount-bg;
+    border-radius: rem(20);
+
+    span {
+
+        font-size: rem(12);
+        font-weight: 800;
+        color: #FF8D68;
+    }
+}
+
+
+
+.content__container_footer {
+
+    border-top: 1px solid $empty-slider;
+    padding: rem(20) rem(0);
+}
+
+.content__footer_facts {
+
+    
+
+    div {
+
+        font-size: rem(12);
+        color: $text-color;
+        margin: rem(10);
+        font-weight: 600;
+
+
+        img {
+
+            margin-right: rem(16);
+        }
+    }
+}
+
