@@ -86,18 +86,21 @@ h2 {
     }
 }
 
+.slider__container {
+
+    padding: rem(0) rem(48);
+}
+
 .slider__billing_container {
 
     padding: rem(45) rem(0);
 }
 
-.switch {
-
-    span {
+.billing {
 
         color: $text-color;
         font-size: rem(12);
-    }
+    
 }
 
 .discount_container {
@@ -105,11 +108,12 @@ h2 {
     padding: rem(2) rem(8);
     background-color: $discount-bg;
     border-radius: rem(20);
+    margin-left: rem(9);
 
     span {
 
         font-size: rem(12);
-        font-weight: 800;
+        font-weight: 600;
         color: #FF8D68;
     }
 }
