@@ -26,11 +26,11 @@
         <div class="content__container_header">
     
             <div class="content__header_pageview"><span>100k Pageviews</span></div>
-            <div class="content__header_price"><div>$16.00</div><span>/ month</span></div>
+            <div class="content__header_price"><div id="price">$10.00</div><span id="date">/ month</span></div>
 
             <div class="slider__container">
               <label for="slider"></label>
-              <input id="slider" class="slider-range" type="range">
+              <input id="slider" class="slider-range" value="10" type="range" min="10" max="50" step="1">
             </div>
   
         </div>
@@ -47,7 +47,7 @@
           <span class="billing">Monthly Billing</span>
           
           <label class="switch">
-            <input type="checkbox">
+            <input id="checkbox" type="checkbox">
             <span class="slider round"></span>
           </label>
           <span class="billing">Yearly Billing</span>
