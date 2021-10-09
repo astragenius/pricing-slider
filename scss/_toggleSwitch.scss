@@ -8,6 +8,11 @@
     height: rem(22);
     margin: rem(0) rem(16);
 
+    @include xs{
+
+        margin: rem(0) rem(10);
+    }
+
     input {
         opacity: 0;
         width: 0;

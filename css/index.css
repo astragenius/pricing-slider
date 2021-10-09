@@ -62,6 +62,11 @@ button {
   justify-content: space-between;
   /*  border: 2px solid magenta; */
 }
+@media (max-width: 414px) {
+  .main__container {
+    align-items: center;
+  }
+}
 
 .main__container_heading {
   /* margin-bottom: rem(70); */
@@ -74,9 +79,16 @@ button {
   max-height: 25rem;
   max-width: 33.75rem;
 }
+@media (max-width: 414px) {
+  .content__container {
+    max-height: 29.875rem;
+    max-width: 20.4375rem;
+  }
+}
 
 .content__container_header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -86,11 +98,17 @@ button {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 414px) {
+  .content__header_price {
+    order: 3;
+  }
+}
 
 .slider__container {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
 }
 
 .slider__billing_container {
@@ -98,19 +116,39 @@ button {
   justify-content: flex-end;
   align-items: center;
 }
+@media (max-width: 414px) {
+  .slider__billing_container {
+    justify-content: center;
+  }
+}
 
 .content__container_footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 414px) {
+  .content__container_footer {
+    flex-direction: column;
+  }
+}
 
 h1 {
   color: #293356;
 }
+@media (max-width: 414px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+}
 
 h2 {
   color: #858fad;
+}
+@media (max-width: 414px) {
+  h2 {
+    font-size: 0.8125rem;
+  }
 }
 
 .trial-btn {
@@ -134,6 +172,11 @@ h2 {
   background-position: center;
   margin-bottom: 3.375rem;
 }
+@media (max-width: 414px) {
+  .main__container_heading {
+    margin-bottom: 1.875rem;
+  }
+}
 .main__container_heading h1 {
   margin-bottom: 0.75rem;
 }
@@ -144,9 +187,14 @@ h2 {
   border-radius: 0.5rem;
   margin-top: 3.375rem;
 }
+@media (max-width: 414px) {
+  .content__container {
+    margin-top: 1.25rem;
+  }
+}
 
 .content__container_header {
-  padding: 1.5rem 0rem;
+  padding-top: 1.5rem;
 }
 
 .content__header_pageview span {
@@ -156,6 +204,11 @@ h2 {
   letter-spacing: 2px;
   font-weight: 800;
 }
+@media (max-width: 414px) {
+  .content__header_pageview span {
+    font-size: 0.75rem;
+  }
+}
 
 .content__header_price div {
   font-size: 2.5rem;
@@ -163,19 +216,42 @@ h2 {
   letter-spacing: -1px;
   color: #293356;
 }
+@media (max-width: 414px) {
+  .content__header_price div {
+    font-size: 2rem;
+  }
+}
 .content__header_price span {
   font-size: 1rem;
   font-weight: 600;
   color: #858fad;
   margin-left: 0.5rem;
 }
+@media (max-width: 414px) {
+  .content__header_price span {
+    font-size: 0.875rem;
+  }
+}
 
 .slider__container {
   padding: 0rem 3rem;
+  margin-top: 1.5rem;
+}
+@media (max-width: 414px) {
+  .slider__container {
+    padding: 0rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.875rem;
+  }
 }
 
 .slider__billing_container {
   padding: 2.8125rem 3.125rem;
+}
+@media (max-width: 414px) {
+  .slider__billing_container {
+    padding: 2.375rem 1.25rem;
+  }
 }
 
 .billing {
@@ -189,10 +265,30 @@ h2 {
   border-radius: 1.25rem;
   margin-left: 0.5625rem;
 }
+@media (max-width: 414px) {
+  .discount_container {
+    width: 2.625rem;
+    height: 1.1875rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .discount_container span {
   font-size: 0.75rem;
   font-weight: 600;
   color: #FF8D68;
+}
+@media (max-width: 414px) {
+  .discount_container span {
+    font-size: 0.625rem;
+  }
+}
+@media (max-width: 414px) {
+  .discount_container .discount {
+    display: none;
+  }
 }
 
 .content__container_footer {
@@ -200,6 +296,11 @@ h2 {
   padding: 1.25rem 0rem;
 }
 
+@media (max-width: 414px) {
+  .content__footer_facts {
+    margin-bottom: 2rem;
+  }
+}
 .content__footer_facts div {
   font-size: 0.75rem;
   color: #858fad;
@@ -216,6 +317,11 @@ h2 {
   width: 2.6875rem;
   height: 1.375rem;
   margin: 0rem 1rem;
+}
+@media (max-width: 414px) {
+  .switch {
+    margin: 0rem 0.625rem;
+  }
 }
 .switch input {
   opacity: 0;
@@ -302,6 +408,7 @@ input[type=range]::-webkit-slider-thumb {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #10d5c2;
+  box-shadow: 0px 18px 25px 10px #a5f3eb;
   -webkit-appearance: none;
 }
 
@@ -333,6 +440,7 @@ input[type=range]::-moz-range-thumb {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #10d5c2;
+  box-shadow: 0px 18px 25px 10px #a5f3eb;
 }
 
 input[type=range]:hover::-moz-range-thumb {

@@ -27,6 +27,7 @@ input[type=range] {
     background-repeat: no-repeat;
     background-position: center;
     background-color: $slider-bg;
+    box-shadow:  0px 18px 25px 10px $full-slider; 
     -webkit-appearance: none;
   }
 
@@ -63,6 +64,7 @@ input[type=range] {
     background-repeat: no-repeat;
     background-position: center;
     background-color: $slider-bg;
+    box-shadow: 0px 18px 25px 10px $full-slider;
    
   }
 

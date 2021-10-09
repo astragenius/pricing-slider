@@ -1,5 +1,6 @@
 @use 'functions';
 @use 'colors';
+@use 'breakpoints';
 
 
 
@@ -7,10 +8,20 @@
 
 h1 {
     color: $text-color-dark;
+   
+    @include xs {
+
+        font-size: rem(20);
+    }
 }
 
 h2 {
     color: $text-color;
+
+    @include xs {
+
+        font-size: rem(13);
+    }
     
 }
 
@@ -38,6 +49,11 @@ h2 {
     background-size: contain;
     background-position: center;
     margin-bottom: rem(54);
+
+    @include xs {
+
+        margin-bottom: rem(30);
+    }
     
     h1 {
 
@@ -54,12 +70,18 @@ h2 {
     box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
     border-radius: rem(8);
     margin-top: rem(54);
+
+    @include xs {
+
+        margin-top: rem(20);
+    }
    
 }
 
 .content__container_header {
 
-    padding: rem(24) rem(0);
+   padding-top: rem(24);
+
 }
 
 .content__header_pageview {
@@ -71,11 +93,16 @@ h2 {
         font-size: rem(14);
         letter-spacing: 2px;
         font-weight: 800;
+
+        @include xs {
+            font-size: rem(12);
+        }
     }
 }
 
 .content__header_price {
 
+    
 
     div {
 
@@ -83,6 +110,11 @@ h2 {
         font-weight: 800;
         letter-spacing: -1px;
         color: $text-color-dark;
+
+        @include xs {
+
+            font-size: rem(32);
+        }
     }
 
     span {
@@ -91,17 +123,34 @@ h2 {
         font-weight: 600;
         color: $text-color;
         margin-left: rem(8);
+
+        @include xs {
+            font-size: rem(14);
+        }
     }
 }
 
 .slider__container {
 
     padding: rem(0) rem(48);
+    margin-top: rem(24);
+
+    @include xs {
+
+        padding: rem(0) rem(32);
+        margin-bottom: rem(24);
+        margin-top: rem(30);
+    }
 }
 
 .slider__billing_container {
 
     padding: rem(45) rem(50);
+
+    @include xs {
+
+        padding: rem(38) rem(20);
+    }
 }
 
 .billing {
@@ -118,13 +167,40 @@ h2 {
     border-radius: rem(20);
     margin-left: rem(9);
 
+    @include xs {
+
+        width: rem(42);
+        height: rem(19);
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
     span {
 
         font-size: rem(12);
         font-weight: 600;
         color: #FF8D68;
+
+        @include xs {
+            font-size: rem(10);
+        }
+        
     }
+
+    .discount  {
+
+        @include xs {
+
+            display: none;
+        }
+    }
+
 }
+
+
 
 
 
@@ -136,7 +212,12 @@ h2 {
 
 .content__footer_facts {
 
-    
+    @include xs  {
+
+        margin-bottom: rem(32);
+    }
+
+
 
     div {
 

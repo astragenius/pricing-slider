@@ -17,6 +17,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include xs {
+
+        align-items: center;
+    }
     
     
     
@@ -38,14 +43,24 @@
     
     max-height: rem(400);
     max-width: rem(540);
+
+    @include xs {
+
+        max-height: rem(478);
+        max-width: rem(327);
+    }
     
 
 }  
 
 
+
+
+
 .content__container_header {
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
    
@@ -56,6 +71,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include xs {
+
+        order: 3;
+        
+    }
 }
 
 .slider__container {
@@ -63,13 +84,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
+    
 }
+
+
+
+
+
+
 
 .slider__billing_container {
 
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    @include xs {
+
+        justify-content: center;
+    }
 }
 
 .content__container_footer {
@@ -77,4 +111,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @include xs {
+
+        flex-direction: column;
+    }
 }
