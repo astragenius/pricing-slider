@@ -9,6 +9,16 @@ const checkbox = document.getElementById('checkbox');
 
 const pricingBox = (() => {
 
+    function init() {
+
+        date.textContent = "/ month";
+        checkbox.checked = false;
+        slider.step = "1";
+        slider.max = "50";
+        price.textContent = "$16.00"
+        slider.value = "16";
+
+    }
 
     function updatePrice() {
 
@@ -32,9 +42,11 @@ const pricingBox = (() => {
         }
     }
 
-    return {updatePrice, switchDate}
+    return {init, updatePrice, switchDate}
 
 })();
+
+pricingBox.init();
 
 slider.addEventListener('change', pricingBox.updatePrice);
 checkbox.addEventListener('change', pricingBox.switchDate);
